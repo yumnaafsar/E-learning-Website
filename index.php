@@ -1,52 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E- Learning</title>
-    <!-- Bootstrap Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!-- Google Fonts Ubuntu -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@1,700&display=swap"
-        rel="stylesheet">
-
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-    <!-- Start Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark pl-5 fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">E-Learning</a>
-            <span class='navbar-text'>Learn and grow</span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav custom-nav">
-                    <li class="nav-item custom-nav-item"><a href="index.php" class="nav-link ">Home</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">Courses</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">Payment Status</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">My Profile</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">log Out</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">log In</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">Sign Up</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">Feedback</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navigation -->
+<!-- Including Navbar -->
+<?php
+ include('./mainComponent/navbar.php');
+?>
+<!-- End Navbar -->
 
     <!-- Start Video Background -->
 
@@ -61,7 +17,10 @@
             <h1 class="my-content">Welcome to E-learning</h1>
             <small class="my-content">Learn and grow</small>
             <br>
-            <a href="#" class="btn vid-btn primary-btn">Get started</a>
+            <a href="#" class="btn vid-btn primary-btn" data-bs-toggle="modal" data-bs-target="#StudentRegModal">Get
+                started</a>
+
+
         </div>
     </div>
     <!-- End Video Background -->
@@ -175,102 +134,23 @@
     <br>
 
     <!-- Start Contact Us -->
-    <div class="container mt-4" id="Contact">
-        <!-- Contact Us Container -->
-        <h2 class="text-center mb-4">Contact Us</h2>
-
-        <div class="row">
-            <!-- Contact Us Column 1 -->
-            <div class="col-md-8">
-                <form action="" method="post">
-                    <input type="text" class="form-control" name="name" placeholder="Name"><br>
-
-                    <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
-
-                    <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
-
-                    <input type="email" class="form-control" name="email" placeholder="E-mail"><br>
-
-                    <textarea name="message" class="form-control" cols="30" rows="10" placeholder="How can we help you"
-                        style="height:150px;"></textarea>
-
-                    <br>
-
-                    <input type="button" value="Send" class="btn text-center primary-btn" name="submit">
-
-                    <br><br>
-
-                </form>
-            </div>
-
-            <!-- Contact Us Column 2 -->
-            <div class="col-md-4 stripe text-white text-center" >
-                <h4>E-Learning</h4>
-                <p>
-                    E-learning,
-                    Near Shahr-e-faisal, Karachi
-                    Pakistan <br>
-                    Phone: 03401909090 <br>
-                    Website: E-learning.com
-                </p>
-            </div>
-
-
-        </div>
-    </div>
+    <?php
+    include('./contact.php');
+    ?>
     <!-- End Contact Us -->
 
 
 
     <!--Start Testimonial Section -->
-    <div class="conatiner-fluid" style="margin-top: 60px;">
-    <h2 class="text-center mb-4">Testimonial</h2>
-    <div class="testimonial">
-    <figure class="snip1157">
-        <blockquote>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why
-            we think faster than we speak. Hobbes: Probably so we can think twice.
-            <div class="arrow"></div>
-        </blockquote>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample3.jpg" alt="sq-sample3" />
-        <div class="author">
-            <h5>Pelican Steve <span> LIttleSnippets.net</span></h5>
-        </div>
-    </figure>
-    <figure class="snip1157 hover">
-        <blockquote>Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear
-            plastic binder...When a report looks this good, you know it'll get an A. That's a tip kids. Write it down.
-            <div class="arrow"></div>
-        </blockquote>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample27.jpg" alt="sq-sample27" />
-        <div class="author">
-            <h5>Max Conversion<span> LIttleSnippets.net</span></h5>
-        </div>
-    </figure>
-    <figure class="snip1157">
-        <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic
-            healing and wellness before I'll accept any responsibility for my actions.
-            <div class="arrow"></div>
-        </blockquote>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="sq-sample17" />
-        <div class="author">
-            <h5>Eleanor Faint<span> LIttleSnippets.net</span></h5>
-        </div>
-    </figure>
-    <figure class="snip1157">
-        <blockquote>My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic
-            healing and wellness before I'll accept any responsibility for my actions.
-            <div class="arrow"></div>
-        </blockquote>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample17.jpg" alt="sq-sample17" />
-        <div class="author">
-            <h5>Eleanor Faint<span> LIttleSnippets.net</span></h5>
-        </div>
-    </figure>
-</div>
-</div>
+    <?php
+    include('./testimonial.php');
+    ?>
     <!--End Testimonial Section-->
 
-    <br/><br/> <br/><br/>
+
+
+    <br /><br /> <br /><br />
+
     <!-- Start Social Media Section -->
 
     <div class="container-fluid txt-banner" style="margin-top: 60px;">
@@ -326,32 +206,9 @@
 
     </div>
     <!-- End About Section -->
-
-    <!-- Start Footer -->
-
-    <footer class="container-fluid bg-dark text-center p-2">
-        <small class="text-white">Copyright &copy; 2023 || Designed by E-learning || Admin</small>
-    </footer>
-
-
-
-
-
-    <!-- Bootstarp  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-        crossorigin="anonymous"></script>
-    <!-- Font awasome -->
-
-    <script src="https://kit.fontawesome.com/de702c352c.js" crossorigin="anonymous"></script>
-</body>
-</body>
-
-</html>
+ 
+    <!-- Including Footer -->
+    <?php
+    include('./mainComponent/footer.php');
+    ?>
+    <!-- End Footer -->
