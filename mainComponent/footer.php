@@ -73,7 +73,8 @@
                     </form>
                     <!-- Login FORM End  -->
                     <div class="modal-footer">
-                        <button type="submit" class="btn" style="background-color:#008080 ; color: white;" id="studLoginbtn">Login</button>
+                        <small id="statusLogMsg"></small>
+                        <button type="button" class="btn" style="background-color:#008080 ; color: white;" id="studLoginbtn" onclick="checkStudLogin()" >Login</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Cancel
                         </button>

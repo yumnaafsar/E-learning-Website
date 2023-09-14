@@ -104,3 +104,37 @@ function clearStudRegFrild() {
     $("#statusMsg2").html("");
     $("#statusMsg3").html("");
 }
+
+
+
+// Ajax call for student Login verification
+function checkStudLogin(){
+    var studLogEmail=$("#studlogemail").val();
+    var studLogPass=$("#studlogpass").val();
+
+    $.ajax({
+        url:'Student/addStudent.php',
+        method:'POST',
+        // dataType:'json',
+        data:{
+            checkLogEmail:"checkLogEmail",
+            studLogEmail:studLogEmail,
+            studLogPass:studLogPass,
+        },
+        success:function(data){
+            // console.log(data);
+            if(data==0){
+                console.log(data);
+                $("#statusLogMsg").html('<small class="alert alert-danger">Invalid Email ID or Password</small>');
+            }
+            else if(data==1){
+                $("#statusLogMsg").html('<div class="spinner-border text-success" role="status"></div>');
+                setTimeout(()=>{
+                    window.location.href="index.php";
+                }, 1000);
+
+
+            }
+        }
+    })
+}
