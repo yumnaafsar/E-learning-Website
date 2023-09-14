@@ -37,12 +37,12 @@
                     <li class="nav-item custom-nav-item"><a href="courses.php" class="nav-link">Courses</a></li>
                     <li class="nav-item custom-nav-item"><a href="payment.php" class="nav-link">Payment Status</a></li>
                     <li class="nav-item custom-nav-item"><a href="" class="nav-link">My Profile</a></li>
-                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">log Out</a></li>
                     <li class="nav-item custom-nav-item"><a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#StudentloginModal">log In</a></li>
                     <li class="nav-item custom-nav-item"><a href="" class="nav-link " data-bs-toggle="modal"
-                            data-bs-target="#StudentRegModal">Sign Up</a></li>
+                    data-bs-target="#StudentRegModal">Sign Up</a></li>
                     <li class="nav-item custom-nav-item"><a href="" class="nav-link">Feedback</a></li>
                     <li class="nav-item custom-nav-item"><a href="" class="nav-link">Contact</a></li>
+                    <li class="nav-item custom-nav-item"><a href="" class="nav-link">log Out</a></li>
                 </ul>
             </div>
         </div>

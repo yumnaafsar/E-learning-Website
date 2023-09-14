@@ -1,3 +1,6 @@
+
+
+ 
  <!-- Start Footer -->
  <footer class="container-fluid bg-dark text-center p-2">
         <small class="text-white">Copyright &copy; 2023 || Designed by E-learning || <a href="#login" data-bs-toggle="modal"
@@ -17,35 +20,14 @@
                 </div>
                 <div class="modal-body">
                     <!-- Registration FORM Start  -->
-                    <form id="studRegForm">
-                        <div class="mb-3">
-                            <i class="fa-solid fa-user" style="color:#008080 ;"></i>
-                            <label for="studname" class="pl-2 font-weight-bolder"
-                                style="margin-bottom:6px ;">Name</label>
-                            <input type="text" class="form-control" placeholder="Name" name="studname" id="studname">
-                            <br>
+                    <?php
+                    include('studentRegister.php');
 
-                            <i class="fa-solid fa-envelope" style="color:#008080 ;"></i>
-                            <label for="studemail" class=" pl-2 form-label font-weight-bolder">Email address</label>
-                            <input type="email" class="form-control" placeholder="Email" id="studemail"
-                                name="studemail">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-
-
-                        <div class="mb-3">
-                            <i class="fa-solid fa-key" style="color:#008080 ;"></i>
-                            <label for="studpass" class="form-label pl-2 font-weight-bolder">New Password</label>
-                            <input type="password" class="form-control" id="studpass" name="studpass"
-                                placeholder="Password">
-                        </div>
-
-
-
-                    </form>
-                    <!-- Registration FORM End  -->
+                    ?>
+                     <!-- Registration FORM End  -->
                     <div class="modal-footer">
-                        <button type="submit" class="btn" style="background-color:#008080 ; color: white;">Sign
+                        <span id="successMsg"></span>
+                        <button type="submit" id="signup" class="btn" style="background-color:#008080 ; color: white;" onclick="addStud()">Sign
                             Up</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Close
@@ -64,7 +46,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="StudentloginModalLabel">Student LoginIn</h1>
+                    <h1 class="modal-title fs-5" id="StudentloginModalLabel">Student LogIn</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -152,8 +134,16 @@
 
 
 
-    <!-- Bootstarp  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+   
+    <!-- Font awasome -->
+
+    <script src="https://kit.fontawesome.com/de702c352c.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery adding -->
+    <script src="js/jquery.min.js"></script>
+
+     <!-- Bootstarp  -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
@@ -163,9 +153,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
         crossorigin="anonymous"></script>
-    <!-- Font awasome -->
 
-    <script src="https://kit.fontawesome.com/de702c352c.js" crossorigin="anonymous"></script>
+        
+      <!-- Student Sign Up ajax request -->
+      <script type="text/javascript" src="js/ajaxrequest.js"></script> 
 </body>
 </body>
 
